@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Hotel de La Plage - Guarujá</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #f5f0e6;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #8b5e3c;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #8b5e3c;
+      font-weight: bold;
+    }
+    .banner {
+      background: url('hotel.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .banner h2 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px black;
+    }
+    .btn {
+      display: inline-block;
+      background: #8b5e3c;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      color: #8b5e3c;
+      margin-bottom: 1rem;
+    }
+    .galeria {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .galeria img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .contato form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .contato input, .contato textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contato button {
+      background: #8b5e3c;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f5f0e6;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+    }   
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Grand Hotel de La Plage</h1>
+    <nav>
+      <a href="#historia">História</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h2>Bem-vindo ao icônico Hotel de La Plage</h2>
+    <a href="#historia" class="btn">Conheça a história</a>
+  </div>
+
+ <section id="historia">
+  <h3>A História do Hotel</h3>
+  <div class="historia-grid">
+    
+    <div class="card">
+      <h4>Fundação e primeiras versões</h4>
+      <p>
+        O hotel foi originalmente inaugurado em 2 de setembro de 1893 como parte do plano de urbanização da Vila Balneária de Guarujá. 
+        A primeira versão era construída em madeira, inclusive com influências internacionais e importadas, muito voltada para a elite paulista que buscava locais de veraneio próximos. 
+      </p>
+      <p>
+        Em dezembro de 1897, ocorreu um incêndio que destruiu essa primeira estrutura.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h4>Reconstrução e auge</h4>
+      <p>
+        Foi reconstruído em alvenaria, inicialmente numa versão mais modesta, mas logo depois, em 1912, uma terceira versão grandiosa foi construída pelo escritório de Ramos de Azevedo, com 220 apartamentos, edifícios de 3 e 4 andares, elevadores, terraços, todos os confortos da época para hóspedes de alta categoria.
+      </p>
+      <p>
+        O hotel tinha também um cassino, jardinagem e parques, um jardim zoológico, instalações para banhistas (cabines de praia) e piscinas de água doce. Havia ainda um belvedere (o Parque Miramar) com vista panorâmica.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h4>Declínio</h4>
+      <p>
+        Vários fatores contribuíram para o declínio: a proibição de jogos de azar no Brasil (que afetou os cassinos), 
+        a manutenção de um grande prédio luxuoso que se tornou financeiramente cara; mudanças urbanísticas e de valorização do solo.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h4>Demolição e legado</h4>
+      <p>
+        O hotel foi demolido em 1959. O local foi transformado, e hoje abriga o Shopping La Plage, inaugurado em 1992, que mantém o nome em homenagem ao hotel antigo.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h3>Fotos do Hotel e sua fachada</h3>
+    <div class="galeria">
+      <img src="c:\Users\Gabriel\Downloads\Foto-Antiga-O-Grand-Hotel-de-la-Plage-1912.jpg" >
+      <img src="c:\Users\Gabriel\Downloads\gfoto019a.jpg" >
+      <img src="c:\Users\Gabriel\Downloads\Foto Antiga Guarujá SP Grande Hotel La Plage  (s.d) 1.jpg" >
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h3>Entre em contato</h3>
+    <form>
+      <input type="text" placeholder="Digite seu nome completo" required>
+      <input type="email" placeholder="Digite seu email" required>
+      <textarea placeholder="Escreva sua mensagem" rows="5"></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 - Memória do Hotel de La Plage - Guarujá / Santos</p>
+    <p>Siga-nos nas redes sociais</p>
+  </footer>
+
+</body>
+</html>
